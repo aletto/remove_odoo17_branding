@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="remove_backend_branding" inherit_id="web.WebClient">
+    <xpath expr="//footer" position="replace">
+      <footer t-attf-class="o_main_footer d-none"></footer>
+    </xpath>
+  </template>
+
+  <template id="remove_odoo_help_link" inherit_id="web.UserMenu">
+    <xpath expr="//a[contains(@href, 'odoo.com/documentation')]" position="remove"/>
+    <xpath expr="//a[contains(@href, 'odoo.com/forum')]" position="remove"/>
+    <xpath expr="//a[contains(@href, 'odoo.com/support')]" position="remove"/>
+  </template>
+</odoo>
