@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="mail.email_template_header_default" model="ir.ui.view">
+        <field name="arch" type="xml">
+            <t t-name="mail.email_template_header_default">
+                <div></div>
+            </t>
+        </field>
+    </record>
+
+    <record id="mail.email_template_footer_default" model="ir.ui.view">
+        <field name="arch" type="xml">
+            <t t-name="mail.email_template_footer_default">
+                <div></div>
+            </t>
+        </field>
+    </record>
+</odoo>
